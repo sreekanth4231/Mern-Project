@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    
+</body>
+<script>
+    
+    // const fetchData = async ()=>{
+    //     try{ 
+
+    //         const res = await fetch ("https://express-mongodb-student-data-auth.onrender.com/api/students");
+    //         const  data = await res.json();
+
+    //         console.log(data);
+    //         console.log("Data Get");
+
+    //     }catch(error){
+    //         console.log("error")
+    //     }
+
+    // }
+
+    // fetchData ();
+
+    function Data(){
+        const res =  fetch("https://express-mongodb-student-data-auth.onrender.com/api/students")
+        .then((res) => res.json())
+        .then((data => console.log(data)))
+        .catch((error) => console.log("Error Data Not Fetch"))
+
+    }
+
+    Data();
+
+    // console.log("hi")
+    
+</script>
+</html>
